@@ -1646,7 +1646,7 @@ client.on("message", message => {
     });
   }
 
-  if (message.content === "/stop") {
+  if (message.content === "!stop") {
     var servers = {};
 
     if (message.guild.voiceConnection)
@@ -1664,16 +1664,16 @@ const queue = new Map();
 client.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
 
 client.on("message", message => {
-  if (message.content === "/help") {
+  if (message.content === "!help") {
     const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setImage(
-        "https://media.discordapp.net/attachments/738379901656367124/739798803481100298/PicsArt_08-03-01.50.10.gif"
+        "https://cdn.discordapp.com/attachments/710249273635373108/791033270657351680/1608667334470.png"
       ).setDescription(`**زانیاری بۆتکە**
 👮|Protection Commands|👮 - زانیاری لەسەر بۆتەکە : 
 /1   NEXT   f100
 ★✯★✯★✯★✯★✯★✯
-/stop  👉   بۆ ڕاگرتنی بۆتەکە لەکاتی قسە کردن دا
+!stop  👉   بۆ ڕاگرتنی بۆتەکە لەکاتی قسە کردن دا
 ★✯★✯★✯★✯★✯★✯
 /invite  👉  بۆ ڕاکێشانی بۆتەکە بۆ سێرڤەرەکەت
 ★✯★✯★✯★✯★✯★✯
@@ -1706,4 +1706,4 @@ client.on("message", message => {
   }
 });
 
-client.login("NzQ3NDYwMDE1ODg3MjIwODQ3.X0PMYg.YKeobIsnRPnRqP2HXjh1W4wVfK4");
+client.login("NzgyNTI4MjY4NTAyNDMzODEy.X8NgPQ.MtnTV85Dg7-xq-FWeds1-Yz5JcY");
